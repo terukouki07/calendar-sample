@@ -1,2 +1,7 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<script>
+  let eventData = <%= raw @events.to_json %>;
+</script>
+
+<div id="calendar"></div>
+
+<!--インスタンス変数をjavascriptの変数へ直接代入できないため、JSON形式に変換してからjavascriptの変数へと代入している。-->
